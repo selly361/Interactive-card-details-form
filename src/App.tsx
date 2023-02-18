@@ -1,8 +1,13 @@
-import React from 'react';
+import { Card, Form, SideBar } from 'components';
+import React, { Fragment } from 'react';
 
 function App() {
   return (
-    null
+    <Fragment>
+      <SideBar />
+      <Card />
+      <Form />
+    </Fragment>
   );
 }
 
