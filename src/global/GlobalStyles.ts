@@ -14,7 +14,10 @@ export const GlobalStyles = createGlobalStyle`
 
   /* Set core body defaults */
   body {
-    min-height: 100vh;
+    height: 900px;
+    width: 100vw;
+    overflow-x: hidden;
+    
   }
 
 

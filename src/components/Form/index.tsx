@@ -1,4 +1,13 @@
-import { Container, LargeInput, MediumInput, SmallInput, StyledButton, StyledForm, StyledLabel, Wrapper } from "./Form.styles";
+import {
+  Container,
+  LargeInput,
+  MediumInput,
+  SmallInput,
+  StyledButton,
+  StyledForm,
+  StyledLabel,
+  Wrapper,
+} from "./Form.styles";
 
 import React from "react";
 
@@ -6,24 +15,24 @@ function Form() {
   return (
     <StyledForm>
       <Wrapper>
-        <StyledLabel>Cardholder Name</StyledLabel>
-        <LargeInput placeholder="e.g. Jane Appleseed" />
+        <StyledLabel htmlFor="cardholder-name">Cardholder Name</StyledLabel>
+        <LargeInput id="cardholder-name" placeholder="e.g. Jane Appleseed" />
       </Wrapper>
       <Wrapper>
-        <StyledLabel>Card Number</StyledLabel>
-        <LargeInput placeholder="e.g. 1234 5678 9123 0000" />
+        <StyledLabel htmlFor="card-number">Card Number</StyledLabel>
+        <LargeInput id="card-number" placeholder="e.g. 1234 5678 9123 0000" />
       </Wrapper>
       <Container>
         <Wrapper>
-          <StyledLabel>Exp. Date (MM/YY)</StyledLabel>
+          <StyledLabel htmlFor="expiry-date">Exp. Date (MM/YY)</StyledLabel>
           <Container>
-            <SmallInput placeholder="MM" />
+            <SmallInput id="expiry-date" placeholder="MM" />
             <SmallInput placeholder="YY" />
           </Container>
         </Wrapper>
         <Wrapper>
-          <StyledLabel>CVC</StyledLabel>
-          <MediumInput placeholder="e.g. 123" />
+          <StyledLabel htmlFor="cvc">CVC</StyledLabel>
+          <MediumInput id="cvc" placeholder="e.g. 123" />
         </Wrapper>
       </Container>
       <StyledButton>Confirm</StyledButton>
