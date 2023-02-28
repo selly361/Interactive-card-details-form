@@ -35,7 +35,7 @@ function Form() {
           <MediumInput id="cvc" placeholder="e.g. 123" />
         </Wrapper>
       </Container>
-      <StyledButton>Confirm</StyledButton>
+      <StyledButton  type="submit">Confirm</StyledButton>
     </StyledForm>
   );
 }
